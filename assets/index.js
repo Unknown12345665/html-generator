@@ -20,7 +20,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'linkdin',
+        name: 'linkedin',
         message: 'Please enter your LinkedIn URL.'
     },
     {
@@ -38,11 +38,15 @@ function generateHtml(data) {
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link href="style.css" rel="stylesheet" type="text/css">
+      <link href="./style.css" rel="stylesheet" type="text/css">
       <title>For...of</title>
     </head>
     <body>
     <h1>${data.name}</h1>
+    <h2>${data.location}</h2>
+    <p>${data.bio}</p>
+    <p>${data.linkedin}</p>
+    <p>${data.github}</p>
     </body>
     </html>
     `;
